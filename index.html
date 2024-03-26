@@ -1,285 +1,59 @@
 <!DOCTYPE html>
-<html lang="uk">
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=0.75">
-    <title>welcome to the internet</title>
-
-    <style>
-@font-face {
-  font-family:TopazPlus-a1200;
-  src: url("topaz.eot");
-}
-@font-face {
-  font-family:perfectdos;
-  src: url("perfectdos.ttf") format("truetype");
-}
-@font-face {
-  font-family:TopazPlus-a1200;
-  src: url("topaz.ttf") format("truetype");
-}
-::-webkit-scrollbar-thumb{
-  width:4px;
-  background-color: #007700;
-}
-/*PSEUDOS*/
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #0c1d12;
-}
-::-webkit-scrollbar{
-  width: 4px;
-	background-color: #0c1d12;
-}
-* {
-  scrollbar-color: #007700 #aaaaaa;
-  scrollbar-width: thin;
-}
-html, body {
-  margin: 0;
-  padding:0;
-  background:#0c1d12;
-  min-height: 100vh;
-}
-body {
-  position:absolute;
-  width: auto;
-  min-width: 100%;
-
-}
-
-pre {
-  font-family:perfectdos;
-  font-size: calc(min(30px, 3.3vw));
-  font-weight:normal;
-  color:#ffffff;
-  line-height: calc(min(30px, 3.3vw));
-  margin:0; padding: 0;
-
-}
-.g {color:#c0c0c1}
-.lg {color:#c0c0c1}
-.w {color:#00ff00}
-.by {color:#0c1d12}
-
-::-moz-selection {color:000000;background:#00b600}
-.g::-moz-selection, .by::-moz-selection {color:#000000}
-.lg::-moz-selection {color:#000000}
-.w::-moz-selection {color:#000000}
-
-::selection {color:#000000;background:#00b600}
-.g::selection, .by::selection {color:#000000}
-.lg::selection {color:#000000}
-.w::selection {color:#000000}
-
-.emphasized { font-style: italic; }
-
-.body {
-  padding:16px 8px 16px 8px;
-  animation: textShadow 1.033s infinite;
-}
-.flicker {
-  pointer-events: none;
-  position: fixed;
-  width: auto;
-  min-width: 100%;
-  height:100%;
-  z-index:15;
-  background: rgba(9, 8, 8, 0.1);
-  animation: flicker 0.3301s infinite;
-}
-.scanline {
-  position:fixed;
-  pointer-events: none;
-  top:0%;
-  width: auto;
-  min-width: 100%;
-  height: 2px;
-  z-index: 10;
-  background: rgba(0, 0, 0, .3);
-  opacity: 0.75;
-  animation: scanline 7.77s linear infinite;
-}
-.scanlines {
-  position:fixed;
-  pointer-events: none;
-  width: auto;
-  min-width: 100%;
-  height:100%;
-  z-index: 5;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  background-size: 100% 2px, 3px 100%;
-}
-
-@keyframes flicker { 0% { opacity: 0.119; } 5% { opacity: 0.02841; } 10% { opacity: 0.35748; } 15% { opacity: 0.88852; } 20% { opacity: 0.9408; } 25% { opacity: 0.35088; } 30% { opacity: 0.22426; } 35% { opacity: 0.26418; } 40% { opacity: 0.09249; } 45% { opacity: 0.35312; } 50% { opacity: 0.89436; } 55% { opacity: 0.9574; } 60% { opacity: 0.19754; } 65% { opacity: 0.05086; } 70% { opacity: 0.12137; } 75% { opacity: 0.75791; } 80% { opacity: 0.89617; } 85% { opacity: 0.90183; } 90% { opacity: 0.20657; } 95% { opacity: 0.64125; } 100% { opacity: 0.78042; }}
-/* ANIMATE UNIQUE SCANLINE */
-@keyframes scanline {
-  0% {
-    top:99%;
-  }
-}
-@keyframes scanlines {
-  0% {
-    background-position: 0 50%;
-  }
-}
-
-
-a, a:visited {
-  color: #c0c0c1;
-  
-}
-a:hover, hr {
-  color: #00ff00;
-}
-    </style>
-<head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя сторінка</title>
-</head>
+    <title>New Tab</title> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 <body>
-  <div class="scanlines"></div>
-<div class="scanline"></div>
-<div class="flicker"></div>
-<div class="body">
-    <h1>Моя сторінка</h1>
+    <div class="container">
+        <div class="left">
+            <div class="image">
+                <img src="image.png">
+            </div>
+        </div>
 
-    <pre>
-        <code>
-  ___  _   _  ____  ____    ____  _  _  ____  _  _  ____ 
- / __)( )_( )( ___)(_  _)  (_  _)( \( )( ___)( \( )(  _ \
-( (__  ) _ (  )__)   )(      _)(_  )  (  )__)  )  (  )___/
- \___)(_) (_)(____) (__)    (____)(_)\_)(____)(_)\_)(____)
-        </code>
-    </pre>
+        <div class="right">
+            <div class="head">
+                <p>fzerox@home:~$ ls</p>
+            </div>
 
-    <h2 class="lg">Посилання на локальні файли</h2>
-    <ul class="lg">
-        <li><a href="file1.txt">Файл 1</a></li>
-        <li><a href="file2.txt">Файл 2</a></li>
-        <!-- Додайте посилання на інші файли за потреби -->
-    </ul>
+            <div class="bookmarks">
+            
 
-    <h2 class="lg">База даних</h2>
-    <label for="searchInput">Пошук:</label>
-    <input type="text" id="searchInput">
-    <button onclick="search()">Знайти</button>
+                <div class="category">
+                    <div class="links">
+                        <li class="title"><i class="nf nf-md-chat"></i> social</li>
+                        <li><a href="https://web.whatsapp.com/"><i class="nf nf-md-whatsapp"></i> whatsapp</a></li>
+                        <li><a href="https://youtube.com/"><i class="nf nf-md-youtube"></i> youtube</a></li>
+                        <li><a href="https://twitter.com/home"><i class="nf nf-md-twitter"></i> twitter</a></li>
+                        <li><a href="https://instagram.com/"><i class="nf nf-md-instagram"></i> instagram</a></li>
+                        <li><a href="https://www.reddit.com/"><i class="nf nf-fa-reddit"></i> reddit</a></li>
+                
+                    </div>
+                </div>
 
-    <div id="searchResults">
-        <table class="lg" id="dataTable">
-            <thead>
-                <tr>
-                    <th>Ім'я</th>
-                    <th>Прізвище</th>
-                    <th>Пошта1</th>
-                    <th>Пошта2</th>
-                    <th>Адреса</th>
-                    <th>Комп'ютер</th>
-                    <th>ІР</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>johndoe@example.com</td>
-                    <td>john.doe@example.com</td>
-                    <td>123 Main St</td>
-                    <td>PC</td>
-                    <td>192.168.1.1</td>
-                </tr>
-                <tr>
-                    <td>Jane</td>
-                    <td>Smith</td>
-                    <td>janesmith@example.com</td>
-                    <td>jane.smith@example.com</td>
-                    <td>456 Elm St</td>
-                    <td>Laptop</td>
-                    <td>192.168.1.2</td>
-                </tr>
-                <!-- Додайте інші записи за потреби -->
-            </tbody>
-        </table>
+                <div class="category">
+                    <div class="links">
+                        <li class="title"><i class="nf nf-fa-plus"></i> other</li>
+                        <li><a href="https://osu.ppy.sh/home"><i class="nf  nf-fa-arrow_down"></i> osu!</a></li>
+                        <li><a href="https://www.crunchyroll.com/"><i class="nf nf-fa-tv"></i> crunchyroll</a></li>
+                        <li><a href="https://myanimelist.net/"><i class="nf nf-fa-th_list"></i> myanimelist</a></li>
+                        <li><a href="https://store.steampowered.com/?l=spanish"><i class="nf nf-md-steam"></i> steam</a></li>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="head2">
+                <span>fzerox@home:~$ search</span> 
+                <span id="AboutDevTypeText" class="typing"></span>
+        	      <input class="search-form" autofocus="">
+	          </div>
+        </div>
     </div>
 
-    <script>
-        function search() {
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("searchInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("dataTable");
-            tr = table.getElementsByTagName("tr");
+    <script src="sreachScript.js"></script>
 
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0]; // Assuming the first column contains the name
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>
 
-<h1>Транслітерація тексту</h1>
 
-<label for="ukrainianText">Український текст:</label>
-<textarea id="ukrainianText" rows="4" cols="50"></textarea>
-<button onclick="transliterate()">Транслітерувати</button>
-<p id="transliteratedText"></p>
-
-<h1>Генератор паролів</h1>
-
-<label for="passwordLength">Довжина паролю:</label>
-<input type="number" id="passwordLength" value="12" min="6" max="30">
-<button onclick="generatePassword()">Згенерувати пароль</button>
-<p id="generatedPassword"></p>
-
-<script>
-    function generatePassword() {
-        var length = document.getElementById("passwordLength").value;
-        var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_";
-        var password = "";
-        for (var i = 0; i < length; i++) {
-            password += charset.charAt(Math.floor(Math.random() * charset.length));
-        }
-        document.getElementById("generatedPassword").innerText = password;
-    }
-
-    function transliterate() {
-        var ukrainianText = document.getElementById("ukrainianText").value;
-        var transliteratedText = transliterateUkrainianToEnglish(ukrainianText);
-        document.getElementById("transliteratedText").innerText = transliteratedText;
-    }
-
-    function transliterateUkrainianToEnglish(text) {
-        // Реалізуйте транслітерацію тут
-        // Це може бути реалізовано за допомогою мапи символів або іншими методами
-        // Нижче простий приклад транслітерації:
-
-        var transliterationMap = {
-            'а': 'a', 'б': 'b', 'в': 'v', 'г': 'h', 'ґ': 'g', 'д': 'd', 'е': 'e', 'є': 'ie',
-            'ж': 'zh', 'з': 'z', 'и': 'y', 'і': 'i', 'ї': 'i', 'й': 'i', 'к': 'k', 'л': 'l',
-            'м': 'm', 'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r', 'с': 's', 'т': 't', 'у': 'u',
-            'ф': 'f', 'х': 'kh', 'ц': 'ts', 'ч': 'ch', 'ш': 'sh', 'щ': 'shch', 'ь': '', 'ю': 'iu',
-            'я': 'ia', "'": '', '’': ''
-        };
-
-        var result = '';
-        for (var i = 0; i < text.length; i++) {
-            var char = text[i].toLowerCase();
-            if (transliterationMap.hasOwnProperty(char)) {
-                result += transliterationMap[char];
-            } else {
-                result += char;
-            }
-        }
-        return result;
-    }
-</script>
-</body>
-</html>
+</body></html>
