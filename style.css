@@ -12,7 +12,7 @@ html, body {
   background-image: radial-gradient(#313244 0.5px, #1e1e2e 0.5px);
   background-size: 10px 10px;
   color: var(--color-fg);
-  font-family: "Hurmit Nerd Font", monospace;
+  font-family: "kirsch", monospace;
   height: 100%;
   width: 100%;
   margin: 0;
